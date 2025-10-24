@@ -1,0 +1,107 @@
+/* Estilos Generales */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f6; /* Fondo suave */
+      color: #333;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Para centrar verticalmente */
+      margin: 0;
+    }
+
+    /* Contenedor Principal del Juego */
+    .game-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Título */
+    h2 {
+      color: #007bff; /* Azul vibrante */
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+
+    /* Input */
+    #guessInput {
+      margin-top: 10px;
+      padding: 12px;
+      width: 100%;
+      box-sizing: border-box; /* Incluye padding y border en el ancho total */
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1.1em;
+      transition: border-color 0.3s;
+    }
+
+    #guessInput:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    /* Botón */
+    #checkButton {
+      margin-top: 15px;
+      padding: 12px;
+      width: 100%;
+      background-color: #28a745; /* Verde para la acción principal */
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.1s;
+    }
+
+    #checkButton:hover {
+      background-color: #218838;
+    }
+
+    #checkButton:active {
+      transform: scale(0.98);
+    }
+    
+    /* Área de Feedback */
+    #feedback {
+      margin-top: 20px;
+      padding: 10px;
+      font-weight: bold;
+      min-height: 20px; /* Asegura espacio incluso cuando está vacío */
+      border-radius: 4px;
+      transition: color 0.3s, background-color 0.3s;
+      font-size: 1.2em;
+    }
+
+    /* Estilos para los diferentes estados de Feedback (aplicados con JS) */
+    .feedback-low {
+        color: #dc3545; /* Rojo */
+        background-color: #f8d7da;
+    }
+
+    .feedback-high {
+        color: #ffc107; /* Amarillo oscuro */
+        background-color: #fff3cd;
+    }
+
+    .feedback-correct {
+        color: #28a745; /* Verde */
+        background-color: #d4edda;
+        animation: pulse 1s infinite;
+    }
+
+    /* Animación para el estado correcto */
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+        100% { transform: scale(1); }
+        
