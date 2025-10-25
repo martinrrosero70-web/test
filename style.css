@@ -1,0 +1,18 @@
+body {
+    background-color: #f0f8ff; /* Azul claro */
+    color: #000080; /* Azul marino */
+    font-family: 'Arial', sans-serif;
+    }
+h1 {
+    border-bottom: 2px solid #000080;
+}
+#feedback {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 5px;
+}
+/* MartínR
